@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.rider.troopadelivery.troopa.phone_confirm_activity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_phone_desc"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat"/>
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/cphone"
+        />
+
+    <TextView
+        android:id="@+id/phonemsgtext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_digit"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="20dp"
+
+
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@color/alert">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phone_digit_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_digit_msgs"
+
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/phone_digit_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/test_no"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/senddigit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/contbtn"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_button"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

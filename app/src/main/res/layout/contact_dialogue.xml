@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/breifstat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20sp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Trip Contacts"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ratingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Pickup contact"
+            android:paddingLeft="5sp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/pickupname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Justice Jonathan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"
+
+
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/call_pick_up"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/route_detail_bg">
+
+                <ImageView
+                    android:id="@+id/locaicon2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/ic_baseline_phone_24_black_1"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/ratingHeading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Dropoff contact"
+            android:textSize="14sp"
+            android:paddingLeft="5sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dropoffname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Daniel Jonathan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_bold"
+
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/call_drop_off"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/route_detail_bg">
+
+                    <ImageView
+                        android:id="@+id/locaicon3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:background="@drawable/ic_baseline_phone_24_black_1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

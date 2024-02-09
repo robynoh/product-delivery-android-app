@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.troopadelivery.troopa.start_delivery">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/pickdesti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:id="@+id/opendetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/troopachev"
+
+                >
+<!--                <ImageView-->
+<!--                    android:id="@+id/locicon"-->
+<!--                    android:layout_width="30sp"-->
+<!--                    android:layout_height="30sp"-->
+<!--                    android:contentDescription="location icon"-->
+<!--                    android:background="@drawable/ic_baseline_arrow_drop_up_24"-->
+<!--                    android:paddingTop="10dp"-->
+
+<!--                    />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layer2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dashduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="25min"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+
+                    android:textColor="@color/orange"
+                    />
+                <TextView
+                    android:id="@+id/ratingHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="to dropoff destination"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat"
+
+                    />
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/openinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ic_baseline_info_24"
+
+                >
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/infoicon"-->
+<!--                    android:layout_width="55sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    android:contentDescription="location icon"-->
+<!--                    android:background="@drawable/troopainfo"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    />-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

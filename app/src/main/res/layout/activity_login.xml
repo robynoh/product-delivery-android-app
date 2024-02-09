@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rider.troopadelivery.troopa.login_activity">
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="201dp"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/troppa_logo"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:padding="20dp"
+        android:background="@drawable/signupimg"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/button_layoutxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <Button
+                android:id="@+id/signin_action"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"
+                android:text="@string/signinbtn"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/newregister" />
+            <LinearLayout
+                android:id="@+id/register_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+            <TextView
+                android:id="@+id/register_new_account2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/registerText"
+                android:textColor="@color/orange"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

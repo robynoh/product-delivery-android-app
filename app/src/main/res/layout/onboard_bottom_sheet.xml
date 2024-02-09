@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_design">
+    <LinearLayout
+        android:id="@+id/onlinetxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back !"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            />
+
+        <TextView
+            android:id="@+id/name21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goodluck Seiyefa"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/montserrat"
+
+            android:textColor="@color/orange"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/offlinetxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Do you want to go offline? "
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat"
+
+            android:textStyle="bold"
+
+             />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textColor="@color/orange"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/small_btn">
+    <ImageView
+        android:id="@+id/userimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image_description"
+        android:background="@drawable/goonline"
+        android:paddingTop="40dp"
+        />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/machinename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="30dp"
+            android:text="TVS-08-YH"
+            android:fontFamily="@font/montserrat"
+
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/licenseplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:text="HGZ-1098-OP"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+
+            />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/breifstat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20sp">
+    <TextView
+        android:id="@+id/earningHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Today Earnings"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        />
+
+    <LinearLayout
+        android:id="@+id/earningbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/todayearning"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:text="N0.0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+
+            android:textColor="@color/orange"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Earning"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+
+            android:paddingLeft="60dp"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:id="@+id/earningicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/image_description"
+            android:background="@drawable/ic_baseline_chevron_right_24"
+            android:paddingTop="40dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/breifstat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20sp">
+        <TextView
+            android:id="@+id/ratingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Current Ratings"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ratingvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:text="4.5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+
+                android:textColor="@color/green"
+                />
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Ratings"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="195dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+
+                />
+            <ImageView
+                android:id="@+id/ratingimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/image_description"
+                android:background="@drawable/ic_baseline_chevron_right_24"
+                android:paddingTop="40dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/golivebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/orange"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/kol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Go Online"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/goofflinebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/orange"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/kolx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Yes! Go offline"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

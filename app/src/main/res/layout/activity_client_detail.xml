@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.troopadelivery.troopa.client_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/pickdesti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_pickup_location_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp">
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/opendetail"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="vertical"-->
+                <!--                android:background="@drawable/troopachev"-->
+
+                <!--                >-->
+                <!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:id="@+id/locicon"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:layout_width="30sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:layout_height="30sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:contentDescription="location icon"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:background="@drawable/ic_baseline_arrow_drop_up_24"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:paddingTop="10dp"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;                    />&ndash;&gt;-->
+
+                <!--            </LinearLayout>-->
+
+                <ImageButton
+                    android:id="@+id/opendetail"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/flat_white_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/troopachev" />
+
+                <LinearLayout
+                    android:id="@+id/layer2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dashduration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="10min"
+                        android:textColor="@color/orange"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ratingHeading2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="To pick up destination"
+                        android:textSize="12sp"
+
+                        />
+                    >
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/openinfo"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="vertical"-->
+                <!--                android:background="@drawable/ic_baseline_info_24"-->
+
+                <!--                >-->
+
+                <!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:id="@+id/infoicon"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:layout_width="55sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:layout_height="40sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:contentDescription="location icon"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:background="@drawable/troopainfo"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:paddingTop="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    android:layout_gravity="right"&ndash;&gt;-->
+                <!--&lt;!&ndash;                    />&ndash;&gt;-->
+
+                <!--            </LinearLayout>-->
+
+                <ImageButton
+                    android:id="@+id/openinfo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/flat_white_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_info_24" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

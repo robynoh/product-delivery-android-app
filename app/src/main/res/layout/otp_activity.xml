@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.troopadelivery.troopa.login_now_activity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Phone"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/codesentto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="5dp"
+
+                android:text="Code is sent to"
+                />
+
+            <TextView
+                android:id="@+id/otp_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+234 8956546890"
+                android:textSize="16dp"
+
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/value1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/field_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+
+
+
+                />
+
+            <EditText
+                android:id="@+id/value2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/field_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/value3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/field_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/value4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/field_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/verifyme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Verify"
+                android:textAllCaps="false"
+                android:background="@drawable/round_button"
+                />
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Resend code"
+                android:textColor="@color/orange"
+                />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <ProgressBar
+            android:id="@+id/idLoadingPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

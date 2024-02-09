@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.troopadelivery.troopa.recent_order_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/emptyrecord"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/emailiconx"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="2dp"
+
+        android:background="@drawable/empty_record"/>
+    <TextView
+        android:id="@+id/userlocationrew5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No ride request yet"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+
+
+        />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+</LinearLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity=""
+    android:background="@color/lightgray"
+    tools:context="com.rider.troopadelivery.troopa.earning">
+
+
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@drawable/rider_earning_board"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dashdurationcxz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Today Earning"
+            android:fontFamily="@font/montserrat"
+
+            android:textColor="@color/white"
+            />
+<!--        <Spinner-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:spinnerMode="dropdown"-->
+<!--            android:backgroundTint="@color/white"/>-->
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:paddingRight="25dp">
+            <TextView
+                android:id="@+id/todayearning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:text="N0.0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"
+
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/idBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        android:gravity="center"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/pickup_location_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/all_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:fontFamily="@font/montserrat"
+            android:textSize="25dp"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/dashdurationwsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Trips"
+            android:fontFamily="@font/montserrat"
+            android:textSize="12dp"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/locicon"
+            android:layout_width="30sp"
+            android:layout_height="70sp"
+            android:contentDescription="location icon"
+            android:background="@drawable/line"
+            android:paddingTop="10dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/timeonline"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:text="47hr 39min 5sec"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/dashdurationer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Time Online"
+            android:fontFamily="@font/montserrat"
+            android:textSize="12dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/white"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/dashdurationerf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Trip Earnings"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18dp"
+
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/dashdurationert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Bonus"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14dp"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+
+                <TextView
+                    android:id="@+id/all_rider_earning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0.0"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18dp"
+
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/rider_bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0.0"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14dp"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sucimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_description"
+
+            android:background="@color/white"
+            app:srcCompat="@drawable/divider"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/white"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/dashduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Statements"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18dp"
+
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/statement"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+
+                <TextView
+                    android:id="@+id/dashdurationwse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="More Info"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12dp"
+
+                    android:textColor="@color/orange"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/rider_earn_bottom"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/dashdurationqqwe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Current Balance"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14dp"
+
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="15dp"
+                android:gravity="right">
+
+
+                <TextView
+                    android:id="@+id/current_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="N0.0"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="14dp"
+
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/openwithraw"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:text="Withdraw"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

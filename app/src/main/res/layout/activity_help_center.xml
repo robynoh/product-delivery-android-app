@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context="com.rider.troopadelivery.troopa.help_center">
+
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+    <LinearLayout
+        android:id="@+id/rescue_container"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@drawable/field_background"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstList4fweer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/profilefilterer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/locaicon1wfer"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/sos"
+                    />
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/eruserlocationrew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rescue"
+                        android:textSize="20sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/userlocationrewet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This should be used when there are issues prior to pick"
+                        android:textSize="10sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/show_rescue_form_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/show_rescue_form"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                    />
+
+                    <ImageView
+                        android:id="@+id/hide_rescue_form"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/rescue_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:visibility="gone"
+
+    >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/field_background"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/rescue_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:textSize="12sp"
+                    android:hint="Type in title"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/field_background"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/rescue_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:textSize="12sp"
+                    android:hint="Type in your issue here"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:padding="10dp"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout android:id="@+id/technical_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/field_background"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstList4fwelk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/profilefiltermn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/locaicon1wflop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/sos"
+                    />
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/userlocationrew2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Technical Issue"
+                        android:textSize="20sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/userlocationrew5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This should be used when there are issues prior to pick"
+                        android:textSize="10sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/show_technical_form"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                        />
+
+                    <ImageView
+                        android:id="@+id/hide_technical_form"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+
+                        android:visibility="gone"
+                        android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/technical_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/field_background"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+
+
+                    <EditText
+                        android:id="@+id/tech_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:hint="Type in title"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:inputType="textPersonName"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/field_background"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <EditText
+                        android:id="@+id/tech_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:textSize="12sp"
+                        android:hint="Type in your issue here"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:padding="10dp"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/delivery_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/field_background"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstList4fwe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/profilefilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/locaicon1wf"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/sos"
+                    />
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/userlocationrewy9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Issues"
+                        android:textSize="20sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/userlocationrew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This should be used when there are issues prior to pick"
+                        android:textSize="10sp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/show_delivery_form"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                        />
+
+                    <ImageView
+                        android:id="@+id/hide_delivery_form"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/delivery_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/field_background"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+
+
+                    <EditText
+                        android:id="@+id/del_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:hint="Type in title"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:inputType="textPersonName"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/field_background"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <EditText
+                        android:id="@+id/del_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:textSize="12sp"
+                        android:hint="Type in your issue here"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:padding="10dp"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pickup_container"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/field_background"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/firstList4fweerw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/profilefilterrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/locaicon1wnjf"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/sos" />
+
+                    <LinearLayout
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/userlocationrewop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Pick Up Issues"
+
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/userlocationrewmk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="This should be used when there are issues prior to pick"
+
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/show_pickup_form"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                            />
+
+                        <ImageView
+                            android:id="@+id/hide_pickup_form"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="20dp"
+
+                            android:visibility="gone"
+                            android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pickup_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/field_background"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/pick_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:hint="Type in title"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/field_background"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/pick_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="top|left"
+                            android:hint="Type in your issue here"
+                            android:inputType="textMultiLine"
+                            android:lines="6"
+                            android:overScrollMode="always"
+                            android:padding="10dp"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+    <TextView
+        android:id="@+id/errormsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_rescue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button_bg"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_tech_issues"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button_bg"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat"
+
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_del_issues"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button_bg"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat"
+
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_pick_issues"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button_bg"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

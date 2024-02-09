@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    tools:context="com.rider.troopadelivery.troopa.riderProfile"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/img"
+                app:border_color="@color/white"
+              />
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/rider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Goodluck"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+
+                    />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/license_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GH90KL"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+
+        />
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+
+
+                        android:background="@drawable/ic_baseline_star_rate_24"/>
+
+                    <TextView
+                        android:id="@+id/textViewxxx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profileLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+
+
+                        android:background="@drawable/ic_baseline_logout_24_white"/>
+
+                    <TextView
+                        android:id="@+id/logouttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/field_background"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/firstList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                >
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/emailtextx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Earned Today"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/todayearning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="N0.0"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+                                <TextView
+                                    android:id="@+id/emailtextxzzw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Trips"
+                                    android:textSize="12sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/tripcount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="500+"
+                                    android:textSize="12sp"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+                                <TextView
+                                    android:id="@+id/emailtextx21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Ratings"
+                                    android:textSize="12sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/emailtextx12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="4.5"
+                                    android:textSize="12sp"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+                                <TextView
+                                    android:id="@+id/emailtextx45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Years"
+                                    android:textSize="12sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/date_created"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="2"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/userimg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:contentDescription="@string/image_description"
+                            android:background="@drawable/goonline"
+                            android:paddingTop="40dp"
+                            /> </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ongoingtrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/field_background"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/firstList4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/emailtextx4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ongoing Trip"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/userimgx"-->
+<!--                        android:layout_width="50sp"-->
+<!--                        android:layout_height="50sp"-->
+<!--                        android:src="@drawable/photo_avater"-->
+
+<!--                        />-->
+
+                    />
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/clientname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Goodluck Seiyefa"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/ongoing_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lagoa,Victorial Island, Lagos"
+                            android:textSize="10sp"
+
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/black"
+
+                            />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/profilefilterfwed"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:gravity="right"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/view_location_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/client_contact">
+                            <ImageView
+                                android:id="@+id/locaicon1x"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:background="@drawable/ic_baseline_map_24"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ongoing_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/client_contact">
+
+                            <ImageView
+                                android:id="@+id/locaicon2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:background="@drawable/ic_baseline_phone_24_white"
+                                />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/field_background"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/firstList4fwe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/emailtextxfw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Support"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/openhelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+                        <ImageView
+                            android:id="@+id/locaicon1wf"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/supportimg"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/userlocationrew"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Having issues? feel free to view  our help center"
+                                android:textSize="10sp"
+
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/black"
+
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/locaicon15t"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/ic_baseline_chevron_right_24"
+                            />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

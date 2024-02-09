@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_design">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello !"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goodluck Seiyefa"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/montserrat"
+
+            android:textColor="@color/orange"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for registering with troopa, your info is currently in review"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

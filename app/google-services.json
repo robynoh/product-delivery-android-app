@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526881536238",
+    "firebase_url": "https://gettroopa-ea532-default-rtdb.firebaseio.com",
+    "project_id": "gettroopa-ea532",
+    "storage_bucket": "gettroopa-ea532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526881536238:android:fb3b3d9b221dcf63a69bff",
+        "android_client_info": {
+          "package_name": "com.rider.troopadelivery.troopa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526881536238-1re0lku82jk71su9o0ocg4itoc2i1lmk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rider.troopadelivery.troopa",
+            "certificate_hash": "4998b682a6ec9c06f08c1e1ce4b74531694b5097"
+          }
+        },
+        {
+          "client_id": "526881536238-ohki4o70crd6oo3htlv51pbh4rh32ndo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhm4UUc-izJGHijMrjG8-lg5InDVHUlrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526881536238-ohki4o70crd6oo3htlv51pbh4rh32ndo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

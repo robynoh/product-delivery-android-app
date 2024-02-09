@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rider.troopadelivery.troopa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/troopa_rider_new"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/troopa_rider_new"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Troopa"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <receiver
+            android:name=".GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <receiver
+            android:name=".PickupGeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <activity
+            android:name=".platform_earning"
+            android:exported="false" />
+        <activity
+            android:name=".statement"
+            android:exported="false" />
+        <activity
+            android:name=".withdraw"
+            android:exported="false" />
+        <activity
+            android:name=".confirmed_order_request"
+            android:exported="false" />
+        <activity
+            android:name=".decline_order_request_detail"
+            android:exported="false" />
+        <activity
+            android:name=".daily_card_payment"
+            android:exported="false" />
+        <activity
+            android:name=".card_monthly_payment"
+            android:exported="false" />
+        <activity
+            android:name=".card_week_payment"
+            android:exported="false" />
+        <activity
+            android:name=".daily_earning"
+            android:exported="false" />
+        <activity
+            android:name=".monthly_earning"
+            android:exported="false" />
+        <activity
+            android:name=".week_sort"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password_p1"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".easy_login"
+            android:exported="false" />
+        <activity
+            android:name=".completed_orders"
+            android:exported="false" />
+        <activity
+            android:name=".rider_earning"
+            android:exported="false" />
+        <activity
+            android:name=".card_payment_detail"
+            android:exported="false" />
+        <activity
+            android:name=".card_payments"
+            android:exported="false" />
+        <activity
+            android:name=".cash_payments_details"
+            android:exported="false" />
+        <activity
+            android:name=".cash_payment"
+            android:exported="false" />
+        <activity
+            android:name=".earning"
+            android:exported="false" />
+        <activity
+            android:name=".first_onboarding_screen"
+            android:exported="false" />
+        <activity
+            android:name=".real_order_list"
+            android:exported="false" />
+        <activity
+            android:name=".recent_order_list"
+            android:exported="false" />
+        <activity
+            android:name=".help_center"
+            android:exported="false" />
+        <activity
+            android:name=".delivery_code"
+            android:exported="false" />
+        <activity
+            android:name=".start_delivery"
+            android:exported="false" />
+        <activity
+            android:name=".delivery_bg"
+            android:exported="false" />
+        <activity
+            android:name=".client_detail"
+            android:exported="false" />
+        <activity
+            android:name=".order_list"
+            android:exported="false" />
+        <activity
+            android:name=".rider_account"
+            android:exported="false" />
+        <activity
+            android:name=".machine_info"
+            android:exported="false" />
+        <activity
+            android:name=".riderProfile"
+            android:exported="false" />
+        <activity
+            android:name=".introMap"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GoogleApi" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".success_registration"
+            android:exported="false" />
+        <activity
+            android:name=".phone_login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".phone_confirm_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login_now_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".contact_activity"
+            android:exported="false" />
+        <activity
+            android:name=".onBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen_one"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
